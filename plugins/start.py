@@ -90,11 +90,11 @@ async def start_command(client: Client, message: Message):
         reply_markup = InlineKeyboardMarkup(
             [
                 [
-                    InlineKeyboardButton("🍑 My Channel", url = client.invitelink),
-                    InlineKeyboardButton("🍑 My Channel", url = f"https://t.me/{LINK_CH}")
+                    InlineKeyboardButton("🍑 ᴍʏ ᴄʜᴀɴɴᴇʟ", url = client.invitelink),
+                    InlineKeyboardButton("🍑 ᴍʏ ᴄʜᴀɴɴᴇʟ", url = f"https://t.me/{LINK_CH}")
                 ],
                 [
-                    InlineKeyboardButton("✖️ Close", callback_data = "close")
+                    InlineKeyboardButton("✖️ ᴄʟᴏꜱᴇ", callback_data = "close")
                 ]
             ]
         )
@@ -116,17 +116,17 @@ async def start_command(client: Client, message: Message):
 async def not_joined(client: Client, message: Message):
     buttons = [
         [
-            InlineKeyboardButton("🍑 JOIN CHANNEL", url = client.invitelink)
+            InlineKeyboardButton("🍑 ᴊᴏɪɴ ᴄʜᴀɴɴᴇʟ", url = client.invitelink)
         ], 
         [
-            InlineKeyboardButton("🍑 JOIN CHANNEL", url = f"https://t.me/{LINK_CH}")
+            InlineKeyboardButton("🍑 ᴊᴏɪɴ ᴄʜᴀɴɴᴇʟ", url = f"https://t.me/{LINK_CH}")
         ]
     ]
     try:
         buttons.append(
             [
                 InlineKeyboardButton(
-                    text = '🗝GET FILE',
+                    text = '🗝 ɢᴇᴛ ꜰɪʟᴇ',
                     url = f"https://t.me/{client.username}?start={message.command[1]}"
                 )
             ]
